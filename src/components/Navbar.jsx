@@ -1,15 +1,28 @@
-import { Button, Container, Navbar, Modal } from 'react-bootstrap'
+import { Button, Container, Navbar, Modal } from "react-bootstrap";
+import { useState } from "react";
 
 const NavbarComponent = () => {
-  return (
-    <Navbar expand="sm">
-        <Navbar.Brand hred="/">Ecommerce Store</Navbar.Brand>
-        <Navbar.Toggle/>
-        <Navbar.Collapse className='justify-content-end'>
-            <Button>Cart 0 Items</Button>
-        </Navbar.Collapse>
-        </Navbar>
-  )
-}
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-export default NavbarComponent
+  return (
+    <>
+      <Navbar expand="sm">
+        <Navbar.Brand hred="/">Ecommerce Store</Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Button onClick={handleShow}>Cart 0 Items</Button>
+        </Navbar.Collapse>
+      </Navbar>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>Shopping Cart</Modal.Header>
+        <Modal.Body>
+          <h1>Modal Body</h1>
+        </Modal.Body>
+      </Modal>
+    </>
+  );
+};
+
+export default NavbarComponent;
