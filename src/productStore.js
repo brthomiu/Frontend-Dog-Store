@@ -1,33 +1,18 @@
 export const productsArray = [
   {
-    id: "1",
-    title: "Item1",
-    price: "3.50",
+    id: "price_1LzTBxLDMQ89ZmzgUepRvkao",
+    title: "Buy me Coffee",
+    price: "5.00",
   },
   {
-    id: "2",
-    title: "Item2",
-    price: "3.50",
+    id: "price_1LzTCsLDMQ89ZmzgYNg2Vo0a",
+    title: "Buy me Lunch",
+    price: "10.00",
   },
   {
-    id: "3",
-    title: "Item3",
-    price: "3.50",
-  },
-  {
-    id: "4",
-    title: "Item4",
-    price: "3.50",
-  },
-  {
-    id: "5",
-    title: "Item5",
-    price: "3.50",
-  },
-  {
-    id: "6",
-    title: "Item6",
-    price: "3.50",
+    id: "price_1LzTDhLDMQ89Zmzg33aodF5V",
+    title: "Give me $100",
+    price: "100.00",
   },
 ];
 
